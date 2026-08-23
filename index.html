@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="generator" content="Quarkdown">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="quarkdown:root-path" content=".">
+    <title>Quarkdown</title>
+    <script src="./script/quarkdown.min.js"></script>
+    <script>const capabilities = window.quarkdownCapabilities</script>
+    <script>window.texMacros = {}</script>
+    <link href="./lib/bootstrap-icons/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="./theme/theme.css" rel="stylesheet">
+    <style>
+
+</style>
+    <script>prepare(new PlainDocument());</script>
+<template id="sidebar-template"><nav class="sidebar" role="doc-toc"><ol><li data-target-id="_4-core-components-of-an-agent-framework-multimodal-real-time-ai-agent-systems" data-depth="1"><a href="#_4-core-components-of-an-agent-framework-multimodal-real-time-ai-agent-systems">4. Core Components of an Agent Framework   Multimodal, Real Time AI Agent Systems</a><ol><li data-target-id="page-1" data-depth="2"><a href="#page-1">Page 1</a></li><li data-target-id="page-2" data-depth="2"><a href="#page-2">Page 2</a></li><li data-target-id="page-3" data-depth="2"><a href="#page-3">Page 3</a></li><li data-target-id="page-4" data-depth="2"><a href="#page-4">Page 4</a></li></ol></li><li data-target-id="this-function-is-part-of-the-runtimersquos-control-flow-logic" data-depth="1"><a href="#this-function-is-part-of-the-runtimersquos-control-flow-logic">This function is part of the runtime&rsquo;s control flow logic.</a></li><li data-target-id="if-the-last-message-was-a-tool-call-route-to-the-tool-node" data-depth="1"><a href="#if-the-last-message-was-a-tool-call-route-to-the-tool-node">If the last message was a tool call, route to the tool node.</a></li><li data-target-id="otherwise-end-the-execution" data-depth="1"><a href="#otherwise-end-the-execution">Otherwise, end the execution.</a></li><li data-target-id="the-runtime-will-call-this-function-after-the-lsquochatbotrsquo-node-runs" data-depth="1"><a href="#the-runtime-will-call-this-function-after-the-lsquochatbotrsquo-node-runs">The runtime will call this function after the &lsquo;chatbot&rsquo; node runs.</a></li><li data-target-id="this-edge-sends-the-tool-output-back-to-the-chatbot-continuing-the-loop" data-depth="1"><a href="#this-edge-sends-the-tool-output-back-to-the-chatbot-continuing-the-loop">This edge sends the tool output back to the chatbot, continuing the loop.</a><ol><li data-target-id="page-5" data-depth="2"><a href="#page-5">Page 5</a></li></ol></li><li data-target-id="a-langgraph-state-definition-showing-an-intelligent-update-mechanism" data-depth="1"><a href="#a-langgraph-state-definition-showing-an-intelligent-update-mechanism">A LangGraph State definition showing an intelligent update mechanism.</a></li><li data-target-id="this-annotation-tells-the-runtime-when-a-node-returns-a-list-for-the" data-depth="1"><a href="#this-annotation-tells-the-runtime-when-a-node-returns-a-list-for-the">This annotation tells the runtime: when a node returns a list for the</a></li><li data-target-id="lsquomessagesrsquo-key-donrsquot-replace-the-existing-list-instead-append-to-it" data-depth="1"><a href="#lsquomessagesrsquo-key-donrsquot-replace-the-existing-list-instead-append-to-it">&lsquo;messages&rsquo; key, don&rsquo;t replace the existing list. Instead, append to it.</a></li><li data-target-id="adk-example-configuring-a-persistent-runtime" data-depth="1"><a href="#adk-example-configuring-a-persistent-runtime">ADK Example: Configuring a persistent runtime.</a></li><li data-target-id="this-tells-the-runtime-to-use-vertex-ai-to-save-and-load-checkpoints" data-depth="1"><a href="#this-tells-the-runtime-to-use-vertex-ai-to-save-and-load-checkpoints">This tells the runtime to use Vertex AI to save and load checkpoints.</a></li><li data-target-id="the-agent-engine-id-points-to-the-managed-backend" data-depth="1"><a href="#the-agent-engine-id-points-to-the-managed-backend">The Agent Engine ID points to the managed backend.</a></li><li data-target-id="project-and-location-are-required-for-the-cloud-service" data-depth="1"><a href="#project-and-location-are-required-for-the-cloud-service">Project and location are required for the cloud service.</a></li><li data-target-id="when-the-agent-runs-a-sessionid-is-passed" data-depth="1"><a href="#when-the-agent-runs-a-sessionid-is-passed">When the agent runs, a session_id is passed.</a></li><li data-target-id="the-runtime-uses-this-id-to-find-the-correct-checkpoint-allowing-it-to" data-depth="1"><a href="#the-runtime-uses-this-id-to-find-the-correct-checkpoint-allowing-it-to">The runtime uses this ID to find the correct checkpoint, allowing it to</a></li><li data-target-id="load-the-agentrsquos-state-and-resume-exactly-where-it-left-off" data-depth="1"><a href="#load-the-agentrsquos-state-and-resume-exactly-where-it-left-off">load the agent&rsquo;s state and resume exactly where it left off.</a></li><li data-target-id="runnerrunasyncsessionidldquounique-conversation-idrdquo-hellip" data-depth="1"><a href="#runnerrunasyncsessionidldquounique-conversation-idrdquo-hellip">runner.run_async(session_id=&ldquo;unique-conversation-id&rdquo;, &hellip;)</a><ol><li data-target-id="page-6" data-depth="2"><a href="#page-6">Page 6</a></li></ol></li><li data-target-id="adk-example-the-core-execution-method-is-asynchronous" data-depth="1"><a href="#adk-example-the-core-execution-method-is-asynchronous">ADK Example: The core execution method is asynchronous.</a></li><li data-target-id="the-lsquoawaitrsquo-keyword-here-is-possible-because-the-entire" data-depth="1"><a href="#the-lsquoawaitrsquo-keyword-here-is-possible-because-the-entire">The &lsquo;await&rsquo; keyword here is possible because the entire</a></li><li data-target-id="runtime-is-built-on-an-async-foundation" data-depth="1"><a href="#runtime-is-built-on-an-async-foundation">runtime is built on an async foundation.</a></li><li data-target-id="crewai-example-defining-a-deterministic-hierarchical-runtime-process" data-depth="1"><a href="#crewai-example-defining-a-deterministic-hierarchical-runtime-process">CrewAI Example: Defining a deterministic, hierarchical runtime process.</a></li><li data-target-id="adk-conceptual-example-a-coordinator-agent-that-dynamically-routes-tasks" data-depth="1"><a href="#adk-conceptual-example-a-coordinator-agent-that-dynamically-routes-tasks">ADK Conceptual Example: A coordinator agent that dynamically routes tasks.</a><ol><li data-target-id="page-7" data-depth="2"><a href="#page-7">Page 7</a></li></ol></li><li data-target-id="if-a-user-asks-ldquomy-payment-failedrdquo-the-coordinatorrsquos-llm-will-generate" data-depth="1"><a href="#if-a-user-asks-ldquomy-payment-failedrdquo-the-coordinatorrsquos-llm-will-generate">If a user asks &ldquo;My payment failed,&rdquo; the coordinator&rsquo;s LLM will generate</a></li><li data-target-id="a-call-to-transfertoagentagentnamebilling-the-adk-runtime" data-depth="1"><a href="#a-call-to-transfertoagentagentnamebilling-the-adk-runtime">a call to transfer_to_agent(agent_name='Billing'). The ADK runtime</a></li><li data-target-id="interprets-this-as-a-routing-command-and-passes-control-to-the-billingagent" data-depth="1"><a href="#interprets-this-as-a-routing-command-and-passes-control-to-the-billingagent">interprets this as a routing command and passes control to the billing_agent.</a></li><li data-target-id="adk-example-a-runtime-component-for-parallel-execution" data-depth="1"><a href="#adk-example-a-runtime-component-for-parallel-execution">ADK Example: A runtime component for parallel execution.</a></li><li data-target-id="these-two-agents-can-run-independently-and-at-the-same-time" data-depth="1"><a href="#these-two-agents-can-run-independently-and-at-the-same-time">These two agents can run independently and at the same time.</a></li><li data-target-id="the-parallelagent-runtime-will-execute-both-sub-agents-concurrently" data-depth="1"><a href="#the-parallelagent-runtime-will-execute-both-sub-agents-concurrently">The ParallelAgent runtime will execute both sub-agents concurrently.</a></li><li data-target-id="a-subsequent-agent-can-then-read-both-state-and-state" data-depth="1"><a href="#a-subsequent-agent-can-then-read-both-state-and-state">A subsequent agent can then read both state and state</a></li><li data-target-id="after-the-parallelagent-completes" data-depth="1"><a href="#after-the-parallelagent-completes">after the ParallelAgent completes.</a><ol><li data-target-id="page-8" data-depth="2"><a href="#page-8">Page 8</a></li></ol></li><li data-target-id="a-langgraph-state-definition-showing-an-intelligent-short-term-memory-mechanism" data-depth="1"><a href="#a-langgraph-state-definition-showing-an-intelligent-short-term-memory-mechanism">A LangGraph State definition showing an intelligent short-term memory mechanism.</a></li><li data-target-id="this-is-the-same-concept-as-the-session-state-managed-by-the-runtime" data-depth="1"><a href="#this-is-the-same-concept-as-the-session-state-managed-by-the-runtime">This is the same concept as the session state managed by the runtime.</a></li><li data-target-id="this-annotation-tells-the-runtime-how-to-manage-the-short-term-memory" data-depth="1"><a href="#this-annotation-tells-the-runtime-how-to-manage-the-short-term-memory">This annotation tells the runtime how to manage the short-term memory</a></li><li data-target-id="for-the-lsquomessagesrsquo-key-ensuring-a-coherent-history-is-built" data-depth="1"><a href="#for-the-lsquomessagesrsquo-key-ensuring-a-coherent-history-is-built">for the &lsquo;messages&rsquo; key, ensuring a coherent history is built.</a><ol><li data-target-id="page-9" data-depth="2"><a href="#page-9">Page 9</a></li></ol></li><li data-target-id="crewai-example-enabling-a-complete-long-term-memory-system-with-one-parameter" data-depth="1"><a href="#crewai-example-enabling-a-complete-long-term-memory-system-with-one-parameter">CrewAI Example: Enabling a complete long-term memory system with one parameter.</a></li><li data-target-id="under-the-hood-crewai-now-manages-a-persistent-rag-pipeline-for-the-agents" data-depth="1"><a href="#under-the-hood-crewai-now-manages-a-persistent-rag-pipeline-for-the-agents">Under the hood, CrewAI now manages a persistent RAG pipeline for the agents.</a></li><li data-target-id="adk-example-an-agent-equipped-with-a-tool-to-explicitly-search-long-term-memory" data-depth="1"><a href="#adk-example-an-agent-equipped-with-a-tool-to-explicitly-search-long-term-memory">ADK Example: An agent equipped with a tool to explicitly search long-term memory.</a><ol><li data-target-id="page-10" data-depth="2"><a href="#page-10">Page 10</a></li><li data-target-id="page-11" data-depth="2"><a href="#page-11">Page 11</a></li></ol></li><li data-target-id="crewai-example-a-simple-declarative-way-to-define-a-tool" data-depth="1"><a href="#crewai-example-a-simple-declarative-way-to-define-a-tool">CrewAI Example: A simple, declarative way to define a tool.</a><ol><li data-target-id="page-12" data-depth="2"><a href="#page-12">Page 12</a></li></ol></li><li data-target-id="adk-example-a-standard-python-function-is-registered-as-a-tool" data-depth="1"><a href="#adk-example-a-standard-python-function-is-registered-as-a-tool">ADK Example: A standard Python function is registered as a tool.</a></li><li data-target-id="this-is-just-a-regular-python-function" data-depth="1"><a href="#this-is-just-a-regular-python-function">This is just a regular Python function.</a></li><li data-target-id="hellip-logic-to-call-a-weather-api-hellip" data-depth="1"><a href="#hellip-logic-to-call-a-weather-api-hellip">&hellip; logic to call a weather API &hellip;</a></li><li data-target-id="the-function-is-passed-directly-into-the-agentrsquos-tool-list" data-depth="1"><a href="#the-function-is-passed-directly-into-the-agentrsquos-tool-list">The function is passed directly into the agent&rsquo;s tool list.</a></li><li data-target-id="the-adk-runtime-handles-the-introspection-and-schema-generation" data-depth="1"><a href="#the-adk-runtime-handles-the-introspection-and-schema-generation">The ADK runtime handles the introspection and schema generation.</a></li><li data-target-id="langgraph-example-a-dedicated-node-in-the-graph-for-tool-execution" data-depth="1"><a href="#langgraph-example-a-dedicated-node-in-the-graph-for-tool-execution">LangGraph Example: A dedicated node in the graph for tool execution.</a></li><li data-target-id="first-define-the-tools-eg-as-functions-with-tool-decorators" data-depth="1"><a href="#first-define-the-tools-eg-as-functions-with-tool-decorators">First, define the tools (e.g., as functions with @tool decorators).</a></li><li data-target-id="create-a-toolnode-this-is-a-pre-built-component-that-knows-how-to" data-depth="1"><a href="#create-a-toolnode-this-is-a-pre-built-component-that-knows-how-to">Create a ToolNode. This is a pre-built component that knows how to</a></li><li data-target-id="look-at-the-agentrsquos-state-find-tool-call-requests-and-execute-them" data-depth="1"><a href="#look-at-the-agentrsquos-state-find-tool-call-requests-and-execute-them">look at the agent&rsquo;s state, find tool call requests, and execute them.</a></li><li data-target-id="add-this-node-to-the-graph-an-edge-will-route-control-to-this-node" data-depth="1"><a href="#add-this-node-to-the-graph-an-edge-will-route-control-to-this-node">Add this node to the graph. An edge will route control to this node</a></li><li data-target-id="when-the-agentrsquos-state-contains-a-tool-call" data-depth="1"><a href="#when-the-agentrsquos-state-contains-a-tool-call">when the agent&rsquo;s state contains a tool call.</a><ol><li data-target-id="page-13" data-depth="2"><a href="#page-13">Page 13</a></li><li data-target-id="page-14" data-depth="2"><a href="#page-14">Page 14</a></li></ol></li><li data-target-id="crewai-example-a-deterministic-sequential-communication-pattern" data-depth="1"><a href="#crewai-example-a-deterministic-sequential-communication-pattern">CrewAI Example: A deterministic, sequential communication pattern.</a></li><li data-target-id="the-crew-is-configured-with-a-list-of-agents-and-tasks" data-depth="1"><a href="#the-crew-is-configured-with-a-list-of-agents-and-tasks">The Crew is configured with a list of agents and tasks.</a></li><li data-target-id="the-lsquosequentialrsquo-process-tells-the-runtime-to-pass-control-from-the" data-depth="1"><a href="#the-lsquosequentialrsquo-process-tells-the-runtime-to-pass-control-from-the">The &lsquo;sequential&rsquo; process tells the runtime to pass control from the</a></li><li data-target-id="agent-handling-researchtask-to-the-agent-handling-writingtask-upon-completion" data-depth="1"><a href="#agent-handling-researchtask-to-the-agent-handling-writingtask-upon-completion">agent handling research_task to the agent handling writing_task upon completion.</a></li><li data-target-id="adk-example-using-an-agenttool-for-dynamic-delegation" data-depth="1"><a href="#adk-example-using-an-agenttool-for-dynamic-delegation">ADK Example: Using an AgentTool for dynamic delegation.</a></li><li data-target-id="define-the-specialist-agents" data-depth="1"><a href="#define-the-specialist-agents">Define the specialist agents.</a></li><li data-target-id="the-coordinator-agent-is-given-tools-that-represent-the-other-agents" data-depth="1"><a href="#the-coordinator-agent-is-given-tools-that-represent-the-other-agents">The coordinator agent is given tools that represent the other agents.</a></li><li data-target-id="the-coordinatorrsquos-llm-will-see-lsquobillingrsquo-and-lsquosupportrsquo-as-available-tools" data-depth="1"><a href="#the-coordinatorrsquos-llm-will-see-lsquobillingrsquo-and-lsquosupportrsquo-as-available-tools">The coordinator&rsquo;s LLM will see &lsquo;Billing&rsquo; and &lsquo;Support&rsquo; as available tools.</a></li><li data-target-id="when-the-coordinatorrsquos-llm-decides-to-call-the-lsquobillingrsquo-tool-the-adk" data-depth="1"><a href="#when-the-coordinatorrsquos-llm-decides-to-call-the-lsquobillingrsquo-tool-the-adk">When the coordinator&rsquo;s LLM decides to call the &lsquo;Billing&rsquo; tool, the ADK</a></li><li data-target-id="runtime-interprets-this-as-a-delegation-of-control-to-the-billingagent" data-depth="1"><a href="#runtime-interprets-this-as-a-delegation-of-control-to-the-billingagent">runtime interprets this as a delegation of control to the billing_agent.</a></li><li data-target-id="langgraph-example-sharing-information-via-a-shared-state-object" data-depth="1"><a href="#langgraph-example-sharing-information-via-a-shared-state-object">LangGraph Example: Sharing information via a shared state object.</a><ol><li data-target-id="page-15" data-depth="2"><a href="#page-15">Page 15</a></li></ol></li><li data-target-id="this-agent-performs-research-and-saves-its-output-to-the-state" data-depth="1"><a href="#this-agent-performs-research-and-saves-its-output-to-the-state">This agent performs research and saves its output to the state.</a></li><li data-target-id="this-agent-reads-the-findings-from-the-state-to-write-its-report" data-depth="1"><a href="#this-agent-reads-the-findings-from-the-state-to-write-its-report">This agent reads the findings from the state to write its report.</a></li><li data-target-id="an-edge-ensures-the-writer-runs-after-the-researcher-so-it-can-access-the-findings" data-depth="1"><a href="#an-edge-ensures-the-writer-runs-after-the-researcher-so-it-can-access-the-findings">An edge ensures the writer runs after the researcher, so it can access the findings.</a></li><li data-target-id="crewai-example-explicitly-defining-information-flow-with-task-context" data-depth="1"><a href="#crewai-example-explicitly-defining-information-flow-with-task-context">CrewAI Example: Explicitly defining information flow with task context.</a></li><li data-target-id="this-tells-the-runtime-the-output-of-researchtask-is-required" data-depth="1"><a href="#this-tells-the-runtime-the-output-of-researchtask-is-required">This tells the runtime: the output of research_task is required</a></li><li data-target-id="context-for-this-task-the-runtime-handles-passing-this-information" data-depth="1"><a href="#context-for-this-task-the-runtime-handles-passing-this-information">context for this task. The runtime handles passing this information.</a><ol><li data-target-id="page-16" data-depth="2"><a href="#page-16">Page 16</a></li></ol></li><li data-target-id="adk-example-separating-the-agentrsquos-core-instruction-from-the-task" data-depth="1"><a href="#adk-example-separating-the-agentrsquos-core-instruction-from-the-task">ADK Example: Separating the agent&rsquo;s core instruction from the task.</a></li><li data-target-id="the-lsquoinstructionrsquo-is-the-agentrsquos-permanent-charter" data-depth="1"><a href="#the-lsquoinstructionrsquo-is-the-agentrsquos-permanent-charter">The &lsquo;instruction&rsquo; is the agent&rsquo;s permanent charter.</a></li><li data-target-id="when-the-agent-runs-the-runtime-combines-this-core-instruction-with-the" data-depth="1"><a href="#when-the-agent-runs-the-runtime-combines-this-core-instruction-with-the">When the agent runs, the runtime combines this core instruction with the</a></li><li data-target-id="current-user-message-and-available-tools-to-form-the-final-prompt" data-depth="1"><a href="#current-user-message-and-available-tools-to-form-the-final-prompt">current user message and available tools to form the final prompt.</a></li><li data-target-id="runnerrunnewmessageldquomy-payment-failedrdquo" data-depth="1"><a href="#runnerrunnewmessageldquomy-payment-failedrdquo">runner.run(new_message=&ldquo;My payment failed.&rdquo;)</a><ol><li data-target-id="page-17" data-depth="2"><a href="#page-17">Page 17</a></li></ol></li><li data-target-id="adk-example-dynamic-injection-of-state-into-the-prompt" data-depth="1"><a href="#adk-example-dynamic-injection-of-state-into-the-prompt">ADK Example: Dynamic injection of state into the prompt.</a></li><li data-target-id="the-topic-placeholder-will-be-dynamically-filled-by-the-runtime" data-depth="1"><a href="#the-topic-placeholder-will-be-dynamically-filled-by-the-runtime">The {topic} placeholder will be dynamically filled by the runtime.</a></li><li data-target-id="if-sessionstate-is-ldquofriendshiprdquo-the-final-instruction-sent-to" data-depth="1"><a href="#if-sessionstate-is-ldquofriendshiprdquo-the-final-instruction-sent-to">If session.state is &ldquo;friendship&rdquo;, the final instruction sent to</a></li><li data-target-id="the-llm-will-be-ldquowrite-a-short-storyhellip-focusing-on-the-theme-friendshiprdquo" data-depth="1"><a href="#the-llm-will-be-ldquowrite-a-short-storyhellip-focusing-on-the-theme-friendshiprdquo">the LLM will be &ldquo;Write a short story&hellip; focusing on the theme: friendship.&rdquo;</a></li><li data-target-id="crewai-example-structured-definition-of-an-agentrsquos-persona" data-depth="1"><a href="#crewai-example-structured-definition-of-an-agentrsquos-persona">CrewAI Example: Structured definition of an agent&rsquo;s persona.</a></li><li data-target-id="this-yaml-is-not-just-documentation-itrsquos-a-configuration-that-the" data-depth="1"><a href="#this-yaml-is-not-just-documentation-itrsquos-a-configuration-that-the">This YAML is not just documentation; it&rsquo;s a configuration that the</a></li><li data-target-id="crewai-runtime-uses-to-build-the-agentrsquos-core-prompt" data-depth="1"><a href="#crewai-runtime-uses-to-build-the-agentrsquos-core-prompt">CrewAI runtime uses to build the agent&rsquo;s core prompt.</a><ol><li data-target-id="page-18" data-depth="2"><a href="#page-18">Page 18</a></li><li data-target-id="page-19" data-depth="2"><a href="#page-19">Page 19</a></li><li data-target-id="page-20" data-depth="2"><a href="#page-20">Page 20</a></li><li data-target-id="extracted-images" data-depth="2"><a href="#extracted-images">Extracted Images</a></li></ol></li></ol></nav>
+</template>  </head>
+  <body class="quarkdown quarkdown-plain">
+    <aside class="margin-area" id="margin-area-left"></aside>
+    <main><h1 class="page-break" id="_4-core-components-of-an-agent-framework-multimodal-real-time-ai-agent-systems">4. Core Components of an Agent Framework   Multimodal, Real Time AI Agent Systems</h1><p>Source: <span class="codespan-content"><code>/Volumes/files/AI_and_Engineering/Arch_real_Mutlmodel_real/4. Core Components of an Agent Framework _ Multimodal, Real-Time AI Agent Systems.pdf</code></span></p><h2 id="page-1">Page 1</h2><p>Chapter 4. Core Components of an Agent
+Framework
+A NOTE FOR EARLY RELEASE READERS
+With Early Release ebooks, you get books in their earliest form—the author’s raw
+and unedited content as they write—so you can take advantage of these technolo-
+gies long before the official release of these titles.
+This will be the 5th chapter of the final book. Please note that the GitHub repo will
+be made active later on.
+If you’d like to be actively involved in reviewing and commenting on this draft,
+please reach out to the editor at <a href="rfernando@oreilly.com">rfernando@oreilly.com</a>.
+In the previous chapters, we explored the architectural shifts that enable real-
+time, fluid AI interaction. Now, we will dissect the very anatomy of a modern AI
+agent. While building a simple agent prototype is straightforward, creating a reli-
+able one that can power business-critical applications is a significant challenge.
+The primary difficulty lies in ensuring the LLM has the appropriate context at
+every step of its reasoning process. This includes both controlling the exact con-
+tent that goes into the LLM’s prompt and executing the right steps to generate rel-
+evant information.
+This is where an agent framework becomes indispensable. It simplifies the devel-
+oper’s journey by providing a structured foundation that handles the complex,
+repetitive, and error-prone aspects of building agentic systems. But with dozens
+of frameworks available, how does a developer choose the right one?
+A good framework is more than just an LLM in a loop; it provides a suite of pro-
+duction-ready features. When evaluating a framework, developers should look
+for capabilities that address the key areas listed in Table 4-1.</p><h2 id="page-2">Page 2</h2><p>Table 4-1. Agent Framework Capabilities
+Capability Description Why It Matters
+Orchestration Manages the control flow, state, Provides the structure to build
+and execution of agentic work- complex, multi-step logic with-
+flows. Can be declarative out getting lost in boilerplate w
+(defining a graph) or impera- hile loops and if/else
+tive (writing code). tangles.
+Memory Enables the agent to remember Crucial for maintaining context,
+information, both within a sin- personalizing interactions, and
+gle conversation (short-term) allowing the agent to learn from
+and across multiple conversa- past experiences.
+tions (long-term).
+Tool Use Provides a standardized and se- Transforms a conversational
+cure way for the agent to use model into an agent that can act
+external functions, APIs, and and interact with the world,
+data sources. moving beyond its training
+data.
+Multi-Agent Supports the creation and coor- Allows for building more capa-
+Systems dination of multiple specialized ble and modular systems by
+agents that can collaborate on a breaking down complex prob-
+task. lems into smaller, manageable
+parts handled by experts.
+Human-in-the- Allows for pausing execution to Essential for reliability and
+Loop await human approval, correc- safety, especially in high-stakes
+tion, or input before applications where full autono-
+continuing. my is not desirable.
+Streaming &amp; Provides real-time feedback on Critical for user experience
+Observability the agent’s actions and inte- (showing the agent is
+grates with tracing tools for de- “thinking”) and for developers
+bugging and monitoring. to understand and improve
+agent performance.
+This chapter dives into these core components, which form the foundation of any
+robust agent framework. We will examine the Runtime and Orchestration
+Engine, which acts as the agent’s central nervous system; a sophisticated Memory
+system for context and recall; a standardized Tooling Interface to interact with
+the world; a protocol for Multi-Agent Communication enabling collaboration;
+and a structured Instructions &amp; Prompting system to define the agent’s purpose
+and identity.
+Understanding these primitives is the key to moving beyond simple chatbots and
+building powerful, autonomous AI systems. As we explore each component, we
+will draw practical examples from two powerful, modern frameworks: Google’s
+Agent Development Kit (ADK) and LangGraph, to illustrate how these theoreti-
+cal concepts are implemented in the real world.
+The Conductor: The Runtime and
+Orchestration Engine
+At the very heart of any agent is its runtime, or orchestration engine. It is the most
+critical, yet often most invisible, component of an agent framework. If the LLM is
+the agent’s brain, providing reasoning and intelligence, the runtime is its central
+nervous system—the conductor that manages its lifecycle, state, and the continu-
+ous loop of perception, reasoning, and action. It is what transforms a static, single-
+shot script into a dynamic, stateful entity capable of autonomous, cyclical
+operation.
+To truly appreciate what a runtime does, it’s essential to first understand the pro-
+found challenges a developer would face without one.</p><h2 id="page-3">Page 3</h2><p>The Developer’s Dilemma: Building an Agent from
+Scratch
+Imagine you have an LLM and a set of Python functions (tools). You decide to
+build an agent to solve a multi-step problem. Your first attempt might look like a
+simple script:</p><ol><li>Take user input.</li><li>Call the LLM with the input and a list of tools.</li><li>If the LLM asks to use a tool, execute that tool’s function.</li><li>Take the tool’s output and feed it back to the LLM.</li><li>Get the final answer and print it.
+This works for a single tool call. But what happens when the task requires multi-
+ple tool calls? Or when the agent needs to decide between two different tools
+based on the result of a third? Suddenly, your simple script explodes in complexi-
+ty. You would be forced to manually implement:
+The Execution Loop
+You’d need to write a while loop that continues until the agent decides it’s
+finished. How does it decide? You’d have to parse the LLM’s output for a
+“stop” signal, a fragile and error-prone process.
+State Management
+Where does the conversation history live? In a global variable? A complex
+object you pass around everywhere? How do you ensure the state is cor-
+rectly updated after each step without bugs? What if one tool needs the out-
+put from two previous, non-sequential tools? You are now responsible for
+managing a complex dependency graph in your code.
+Lifecycle Management
+What if a tool call takes 30 seconds? Your application freezes. What if you
+need a human to approve a step? You have no way to pause the execution,
+save its exact state (including which line of code it’s on), and resume it later.
+Error Handling
+What if a tool fails or an API times out? Your entire loop might crash. You’d
+have to build sophisticated try...except blocks around every single step and
+create a mechanism for the agent to recover and retry.
+Without a framework, a developer quickly ends up building a brittle, tangled web
+of if/else statements, while loops, and manual state tracking—a house of cards
+that is difficult to debug, impossible to scale, and a nightmare to maintain.
+This is the fundamental problem that an orchestration engine solves. It is the op-
+erating system for your agent.
+A robust runtime provides a set of powerful abstractions that handle the opera-
+tional complexity of running an agent, allowing the developer to focus on the
+agent’s logic. Let’s break down its core responsibilities.
+The Execution Loop (The “Perceive-Reason-Act” Cycle)
+The defining characteristic of an agent is its ability to operate in a cycle. The run-
+time is responsible for managing this fundamental loop: perceive new informa-
+tion, reason about the next action, and act on that decision. Figure 4-1 illustrates
+how the framework orchestrates this flow, ensuring the agent remains in the loop
+until the goal is achieved.</li></ol><h2 id="page-4">Page 4</h2><p>Figure 4-1. The Perceive-Reason-Act Loop
+Frameworks make this cyclical nature explicit. LangGraph, for example, repre-
+sents this loop as a literal graph where a conditional edge can route the flow back
+to a reasoning node, creating a clear, visual loop. The following example demon-
+strates a practical implementation of the theoretical “Act &rarr; Perceive” step, illus-
+trating how a conditional edge inspects the agent’s state to either continue the ex-
+ecution loop or terminate it:
+from langgraph.graph import END
+def should_continue(state: State) &rarr; str:
+&quot;&rdquo;&ldquo;Decides whether to continue the loop or finish.&rdquo;&rdquo;&rdquo;</p><h1 class="page-break" id="this-function-is-part-of-the-runtimersquos-control-flow-logic">This function is part of the runtime&rsquo;s control flow logic.</h1><p>if state["messages"][-1]<div class="box error"><header><h4>Error</h4></header><div class="box-content"><p>Unresolved reference: tool</p></div></div>_calls:</p><h1 class="page-break" id="if-the-last-message-was-a-tool-call-route-to-the-tool-node">If the last message was a tool call, route to the tool node.</h1><p>return &ldquo;tools&rdquo;
+else:</p><h1 class="page-break" id="otherwise-end-the-execution">Otherwise, end the execution.</h1><p>return END</p><h1 class="page-break" id="the-runtime-will-call-this-function-after-the-lsquochatbotrsquo-node-runs">The runtime will call this function after the &lsquo;chatbot&rsquo; node runs.</h1><p>graph_builder.add_conditional_edges(&ldquo;chatbot&rdquo;, should_continue)</p><h1 class="page-break" id="this-edge-sends-the-tool-output-back-to-the-chatbot-continuing-the-loop">This edge sends the tool output back to the chatbot, continuing the loop.</h1><p>graph_builder.add_edge(&ldquo;tools&rdquo;, &ldquo;chatbot&rdquo;)
+By defining these edges, the developer delegates the execution loop’s complexity
+to the runtime. This mechanism ensures the agent seamlessly transitions back
+and forth between reasoning and acting until its task is fully resolved, completely
+eliminating the need for fragile, manual while loops in the application code.
+State Management
+An agent without a state is merely a function that transforms input to output. The
+runtime provides a formalized mechanism for managing the agent’s “working
+memory.” This is far more sophisticated than just appending to a list. A good run-
+time provides a structured state that can be updated intelligently. For example, in-
+stead of simply replacing a value, it might apply a “reducer” function that defines
+how an update should be merged with the existing state.</p><h2 id="page-5">Page 5</h2><p>LangGraph’s Annotated type with the add_messages reducer is a perfect exam-
+ple. This is a directive to the runtime, telling it how to merge updates for the mes-
+sages key, ensuring a coherent history is built automatically.</p><h1 class="page-break" id="a-langgraph-state-definition-showing-an-intelligent-update-mechanism">A LangGraph State definition showing an intelligent update mechanism.</h1><p>from typing import Annotated
+from typing_extensions import TypedDict
+from langgraph.graph.message import add_messages
+class State(TypedDict):</p><h1 class="page-break" id="this-annotation-tells-the-runtime-when-a-node-returns-a-list-for-the">This annotation tells the runtime: when a node returns a list for the</h1><h1 class="page-break" id="lsquomessagesrsquo-key-donrsquot-replace-the-existing-list-instead-append-to-it">&lsquo;messages&rsquo; key, don&rsquo;t replace the existing list. Instead, append to it.</h1><p>messages: Annotated[list, add_messages]
+name: str
+birthday: str
+Lifecycle Management (Pause, Resume, Stop)
+Production-grade agents often need to execute tasks that aren’t instantaneous.
+The core concept enabling this is checkpointing: the ability to save a snapshot of
+the agent’s entire execution state—not just its data, but also where it is in its
+workflow. This snapshot can be persisted to storage and reloaded later to resume
+the agent exactly where it left off.
+This is the foundational technology for any human-in-the-loop or long-running
+task functionality. Google’s ADK, for instance, formalizes this with a
+SessionService. The developer can choose an implementation, like
+VertexAiSessionService, which uses a managed cloud backend for persistence.</p><h1 class="page-break" id="adk-example-configuring-a-persistent-runtime">ADK Example: Configuring a persistent runtime.</h1><h1 class="page-break" id="this-tells-the-runtime-to-use-vertex-ai-to-save-and-load-checkpoints">This tells the runtime to use Vertex AI to save and load checkpoints.</h1><p>from google.adk.sessions import VertexAiSessionService</p><h1 class="page-break" id="the-agent-engine-id-points-to-the-managed-backend">The Agent Engine ID points to the managed backend.</h1><p>AGENT_ENGINE_ID = &ldquo;your-reasoning-engine-id&rdquo;</p><h1 class="page-break" id="project-and-location-are-required-for-the-cloud-service">Project and location are required for the cloud service.</h1><p>session_service = VertexAiSessionService(agent_engine_id=AGENT_ENGINE_ID)</p><h1 class="page-break" id="when-the-agent-runs-a-sessionid-is-passed">When the agent runs, a <span class="codespan-content"><code>session_id</code></span> is passed.</h1><h1 class="page-break" id="the-runtime-uses-this-id-to-find-the-correct-checkpoint-allowing-it-to">The runtime uses this ID to find the correct checkpoint, allowing it to</h1><h1 class="page-break" id="load-the-agentrsquos-state-and-resume-exactly-where-it-left-off">load the agent&rsquo;s state and resume exactly where it left off.</h1><h1 class="page-break" id="runnerrunasyncsessionidldquounique-conversation-idrdquo-hellip">runner.run_async(session_id=&ldquo;unique-conversation-id&rdquo;, &hellip;)</h1><p>Asynchronous by Default: The Non-Blocking Engine
+Modern agentic systems are inherently I/O-bound. They spend most of their time
+waiting—for an LLM to generate tokens, for a tool to return data from an API, or
+for a database query to complete. A synchronous framework would freeze during
+these waits, leading to unresponsive applications and inefficient resource use.
+A production-grade runtime, therefore, must be asynchronous by default. It
+should be built on an async/await paradigm, ensuring that long-running opera-
+tions don’t block the entire system. This is the foundation that enables several oth-
+er critical features:
+Streaming
+An agent can stream back tokens or thoughts while simultaneously waiting
+for a tool to finish.
+Concurrency
+Multiple tools or even multiple sub-agents can be run in parallel.</p><h2 id="page-6">Page 6</h2><p>Responsiveness
+Human-in-the-loop prompts can be handled without halting the entire
+server process.
+Frameworks expose this through their core execution methods. Notice the async
+def signature in ADK’s primary run method, signaling that the entire execution is
+non-blocking. LangGraph and CrewAI are similarly built on an async foundation.</p><h1 class="page-break" id="adk-example-the-core-execution-method-is-asynchronous">ADK Example: The core execution method is asynchronous.</h1><p>class Runner:
+async def run_async(
+self,
+*,
+user_id: str,
+session_id: str,
+&hellip;
+) &rarr; AsyncGenerator[Event, None]:</p><h1 class="page-break" id="the-lsquoawaitrsquo-keyword-here-is-possible-because-the-entire">The &lsquo;await&rsquo; keyword here is possible because the entire</h1><h1 class="page-break" id="runtime-is-built-on-an-async-foundation">runtime is built on an async foundation.</h1><p>session = await self.session_service.get_session(...)
+&hellip;
+This async-native design is not a luxury; it is a prerequisite for building agents
+that can operate efficiently and interact fluidly in the real world.
+Control Flow and Routing
+After an agent acts, what happens next? The runtime is responsible for routing
+the execution based on a set of rules. This control flow can be deterministic (hard-
+coded) or dynamic (LLM-driven).
+Deterministic Routing
+This provides reliability and predictability. A great example is CrewAI’s. By
+setting process=Process.hierarchical, the developer instructs the runtime to
+always route tasks through a manager agent, which then delegates to
+workers.</p><h1 class="page-break" id="crewai-example-defining-a-deterministic-hierarchical-runtime-process">CrewAI Example: Defining a deterministic, hierarchical runtime process.</h1><p>from crewai import Crew, Process
+crew = Crew(
+agents=[researcher, writer],
+tasks=[some_task],
+process=Process.hierarchical, # This is a directive to the runtime engine.
+manager_llm=&ldquo;gpt-4o&rdquo; # The manager will orchestrate the workers.
+)
+Dynamic (LLM-Driven) Routing
+This provides flexibility. The LLM itself decides which agent should receive
+the task next. The runtime is responsible for interpreting this decision and
+routing control. Google’s ADK implements this via a special
+transfer_to_agent function call. When an agent’s LLM outputs this, the
+ADK runtime intercepts it and transfers execution to the named agent.</p><h1 class="page-break" id="adk-conceptual-example-a-coordinator-agent-that-dynamically-routes-tasks">ADK Conceptual Example: A coordinator agent that dynamically routes tasks.</h1><p>from google.adk.agents import LlmAgent
+billing_agent = LlmAgent(name=&ldquo;Billing&rdquo;, description=&ldquo;Handles billing inquiries.&rdquo;)
+support_agent = LlmAgent(name=&ldquo;Support&rdquo;, description=&ldquo;Handles technical support.&rdquo;)
+coordinator = LlmAgent(
+name=&ldquo;HelpDeskCoordinator&rdquo;,</p><h2 id="page-7">Page 7</h2><p>instruction=&ldquo;Route user requests: Use Billing agent for payment issues, Support agent for technical problems.&rdquo;,
+sub_agents=[billing_agent, support_agent]
+)</p><h1 class="page-break" id="if-a-user-asks-ldquomy-payment-failedrdquo-the-coordinatorrsquos-llm-will-generate">If a user asks &ldquo;My payment failed,&rdquo; the coordinator&rsquo;s LLM will generate</h1><h1 class="page-break" id="a-call-to-transfertoagentagentnamebilling-the-adk-runtime">a call to <span class="codespan-content"><code>transfer_to_agent(agent_name='Billing')</code></span>. The ADK runtime</h1><h1 class="page-break" id="interprets-this-as-a-routing-command-and-passes-control-to-the-billingagent">interprets this as a routing command and passes control to the billing_agent.</h1><p>Concurrency and Parallelism
+To improve efficiency, an agent may need to perform multiple actions at once. A
+mature agent runtime can handle this complexity. Google’s ADK provides a
+ParallelAgent, a runtime component whose sole job is to execute its sub-agents
+concurrently, manage the asynchronous operations, and gather the results. This
+abstracts away the complexity of managing threading or async IO.</p><h1 class="page-break" id="adk-example-a-runtime-component-for-parallel-execution">ADK Example: A runtime component for parallel execution.</h1><p>from google.adk.agents import ParallelAgent, LlmAgent</p><h1 class="page-break" id="these-two-agents-can-run-independently-and-at-the-same-time">These two agents can run independently and at the same time.</h1><p>fetch_weather = LlmAgent(name=&ldquo;WeatherFetcher&rdquo;, output_key=&ldquo;weather&rdquo;)
+fetch_news = LlmAgent(name=&ldquo;NewsFetcher&rdquo;, output_key=&ldquo;news&rdquo;)</p><h1 class="page-break" id="the-parallelagent-runtime-will-execute-both-sub-agents-concurrently">The ParallelAgent runtime will execute both sub-agents concurrently.</h1><p>gatherer = ParallelAgent(
+name=&ldquo;InfoGatherer&rdquo;,
+sub_agents=[fetch_weather, fetch_news]
+)</p><h1 class="page-break" id="a-subsequent-agent-can-then-read-both-state-and-state">A subsequent agent can then read both state['weather'] and state['news']</h1><h1 class="page-break" id="after-the-parallelagent-completes">after the ParallelAgent completes.</h1><p>The Agent’s Mind: Memory
+What separates a truly intelligent assistant from a mere command-line tool? The
+ability to remember. A simple calculator can answer 2+2 correctly every time, but
+it has no recollection of the previous calculation. A true assistant, however, can
+answer, “What was the result of that last calculation?” or “You know I prefer my
+reports in Celsius, right?”. This capacity for recall—this memory—is what enables
+coherence, personalization, and genuine utility.
+In an agent framework, memory is not a single, monolithic concept. It is a struc-
+tured system designed to provide the agent with the right context at the right
+time. As we have described in chapter 1, we can categorize agent memory into
+two distinct types based on its scope and persistence:
+Short-Term Memory (Session Context)
+The agent’s “working memory” for the current task.
+Long-Term Memory
+The agent’s persistent knowledge base that spans across multiple
+conversations.
+Let’s explore how a robust framework provides both.
+Short-Term Memory: The Conversational Workspace
+As we discussed in the Runtime and Orchestration Engine section, every agent in-
+teraction happens within a session that has a state. This session state is the agent’s
+short-term memory. Its primary purpose is to maintain coherence and context
+within a single, continuous task or conversation. It holds the chat history, the re-</p><h2 id="page-8">Page 8</h2><p>sults of recent tool calls, and any other information directly relevant to the job at
+hand.
+To recap, a developer building an agent from scratch would face the
+Conversational Context Problem: manually managing the growing list of messages
+and state updates to prevent context window overflow and ensure the LLM has
+the necessary information for its next step.
+An agent framework’s runtime solves this by formalizing session state manage-
+ment. As we saw with LangGraph’s, the runtime isn’t just appending to a list; it’s
+managing a structured state object according to predefined rules (reducers), en-
+suring the conversational workspace is maintained automatically and reliably.</p><h1 class="page-break" id="a-langgraph-state-definition-showing-an-intelligent-short-term-memory-mechanism">A LangGraph State definition showing an intelligent short-term memory mechanism.</h1><h1 class="page-break" id="this-is-the-same-concept-as-the-session-state-managed-by-the-runtime">This is the same concept as the session state managed by the runtime.</h1><p>from typing import Annotated
+from typing_extensions import TypedDict
+from langgraph.graph.message import add_messages
+class State(TypedDict):</p><h1 class="page-break" id="this-annotation-tells-the-runtime-how-to-manage-the-short-term-memory">This annotation tells the runtime how to manage the short-term memory</h1><h1 class="page-break" id="for-the-lsquomessagesrsquo-key-ensuring-a-coherent-history-is-built">for the &lsquo;messages&rsquo; key, ensuring a coherent history is built.</h1><p>messages: Annotated[list, add_messages]
+While the runtime handles the mechanics of short-term memory, the concept of
+long-term memory introduces a new set of challenges that require a dedicated
+system.
+Long-Term Memory: The Persistent Knowledge Base
+Let’s say a user tells your agent, “My shipping address is 123 Main St.” In the next
+conversation, a week later, they ask, “Ship my order to my address.” Short-term
+memory, which is scoped to a single session, is of no help here. The agent needs to
+access a persistent, long-term knowledge store.
+This is the Persistent Knowledge Problem. Without a framework, a developer
+would have to design a database, write code to extract “facts” from conversations,
+save them, and then, most critically, figure out how to retrieve only the relevant
+facts for a new query. You have just stumbled into the incredibly difficult problem
+of information retrieval.
+Long-term memory is the agent’s persistent knowledge store. Its purpose is to en-
+able personalization and recall of information across different conversations and
+over time.
+Simply storing information is the easy part. The far more difficult challenge is re-
+trieval. You cannot simply dump a user’s entire interaction history into the LLM’s
+prompt. The core problem a long-term memory system solves is finding the few,
+most relevant pieces of information from a vast knowledge base and making
+them available to the agent for its current task.
+Modern frameworks almost always solve this with a Retrieval-Augmented
+Generation (RAG) architecture, often powered by a vector database. The flow is as
+follows:</p><ol><li>Ingest: Key information is extracted from a conversation and stored.</li><li>Embed: The information is converted into a numerical representation (an em-
+bedding) that captures its semantic meaning.</li><li>Store: The embedding and the original text are stored in a searchable index.</li><li>Search: When the agent needs information, its query is also embedded, and
+the system searches for the most semantically similar pieces of stored
+information.</li></ol><h2 id="page-9">Page 9</h2><p>Frameworks provide this complex RAG pipeline as a managed service. CrewAI,
+for instance, makes enabling long-term memory incredibly simple. By setting
+memory=True on the Crew, the framework automatically configures a persistent
+SQLite database for storing key-value memories and a ChromaDB vector store for
+semantic search.</p><h1 class="page-break" id="crewai-example-enabling-a-complete-long-term-memory-system-with-one-parameter">CrewAI Example: Enabling a complete long-term memory system with one parameter.</h1><p>from crewai import Crew, Process
+crew = Crew(
+agents=[researcher, writer],
+tasks=[research_task, analysis_task],
+process=Process.sequential,
+memory=True, # This flag activates the long-term memory system.
+verbose=True
+)</p><h1 class="page-break" id="under-the-hood-crewai-now-manages-a-persistent-rag-pipeline-for-the-agents">Under the hood, CrewAI now manages a persistent RAG pipeline for the agents.</h1><p>Google’s ADK provides another excellent example with its
+VertexAiMemoryBankService. This illustrates the “tool-based” interaction with
+long-term memory. The agent doesn’t “magically” remember; it is given a
+load_memory tool. When it determines it needs past information, it acts by call-
+ing this tool with a specific query. The runtime, connected to the
+VertexAiMemoryBankService, executes the search and returns the results.</p><h1 class="page-break" id="adk-example-an-agent-equipped-with-a-tool-to-explicitly-search-long-term-memory">ADK Example: An agent equipped with a tool to explicitly search long-term memory.</h1><p>from google.adk.tools import load_memory
+memory_recall_agent = LlmAgent(
+model=&ldquo;gemini-2.0-flash&rdquo;,
+name=&ldquo;MemoryRecallAgent&rdquo;,
+instruction=&ldquo;Answer the user&rsquo;s question. Use the &lsquo;load_memory&rsquo; tool &quot;
+&ldquo;if the answer might be in past conversations.&rdquo;,
+tools=[load_memory] # The agent is given the ability to query its memory.
+)
+The Synergy of Memory
+The true power of an agent’s memory comes from the seamless interplay between
+its short-term and long-term systems. A typical cognitive loop looks like this:</p><ol><li>The agent receives a new user query. The runtime adds this to its short-term
+memory (the current session state).</li><li>The agent analyzes the query and the immediate context from its short-term
+memory. It might realize it’s missing a key piece of information (e.g., “What is
+the user’s favorite topic?”).</li><li>It then formulates a query and uses a tool to search its long-term memory.</li><li>The long-term memory system retrieves the relevant fact (“The user’s favorite
+topic is AI ethics”).</li><li>This retrieved fact is then loaded into the agent’s short-term memory as con-
+text for the current step.</li><li>Finally, with both the immediate conversational context and the retrieved
+long-term knowledge now present in its working memory, the agent formu-
+lates its final, intelligent response.
+To provide accurate and personalized responses, an agent must balance immedi-
+ate context with persistent knowledge. Figure 4-2 illustrates the relationship be-
+tween these two distinct memory types and how the agent framework orches-
+trates the retrieval and storage of information during a single turn.</li></ol><h2 id="page-10">Page 10</h2><p>Figure 4-2. The synergy of memory. Short-term memory tracks the current ’state’ of the conversation, while
+long-term memory acts as an external repository for the agent to query as needed.
+The Agent’s Hands and Senses: The Tooling
+Interface
+An agent that can only talk is a conversationalist. An agent that can act is a collab-
+orator. The bridge between the agent’s reasoning mind and the vast world of digi-
+tal and physical actions is its tooling interface. This component is the standard-
+ized system that allows an agent to perceive and manipulate its environment be-
+yond the confines of the LLM. It is what enables an agent to browse the web,
+query a database, send an email, or even turn on a smart light.
+A well-designed tooling interface is a non-negotiable pillar of any serious agent
+framework. It provides the essential abstraction layer that makes external capa-
+bilities safely and reliably available to the agent’s reasoning engine.
+The Developer’s Dilemma: The Disconnected Agent
+Imagine you want to give your LLM-powered agent a new skill: the ability to
+check the current weather. Without a tooling interface, your path is fraught with
+complexity and risk:
+Parsing Intent
+First, you’d need to prompt the LLM to recognize a user’s request for
+weather and instruct it to output a specific, parsable string, like
+<em>TOOL_CALL</em>: get_weather(city=&rsquo;San Francisco&rsquo;) . This is fragile.
+A slight deviation in the LLM’s output format breaks your entire system.
+You are now in the business of writing complex regular expressions to
+parse model output.
+Executing the Function
+Once you’ve parsed the request, your code needs to map the string
+get_weather to your actual Python function,
+get_weather_forecast() . You’d have to build and maintain a registry of
+function names to function objects.
+Handling Arguments
+You then need to parse the arguments ‘San Francisco’ and pass them cor-
+rectly to your function. What if the LLM hallucinates an argument that
+your function doesn’t accept? Your code will crash unless you build robust
+validation.
+Security Risks
+What if your tool was a code executor that takes a string of Python code
+and runs exec() on it? If an adversary can trick your LLM into
+outputting <em>TOOL_CALL</em>: execute_python(code=&rsquo;import os;
+os.system(&ldquo;rm -rf /&rdquo;)&rsquo;) , you have a catastrophic security
+vulnerability.
+This manual, ad-hoc approach is unscalable, insecure, and brittle. A proper tool-
+ing interface solves these problems by providing a standardized, secure, and in-
+trospectable way to define and execute tools.</p><h2 id="page-11">Page 11</h2><p>Core Responsibilities of a Tooling Interface
+A robust tooling interface handles the entire lifecycle of a tool call, providing
+three critical functions: definition, selection, and execution.
+Tool Definition and Registration
+This is the process of making a piece of code (like a Python function) available to
+the agent. A good framework provides a simple, declarative way to do this. The
+developer shouldn’t have to write complex boilerplate; they should be able to
+“register” a function as a tool with minimal effort.
+This is often achieved through decorators or wrapper classes. CrewAI’s is a classic
+example of this principle. By simply adding @tool above a function, the develop-
+er signals to the framework that this function is an agent capability.</p><h1 class="page-break" id="crewai-example-a-simple-declarative-way-to-define-a-tool">CrewAI Example: A simple, declarative way to define a tool.</h1><p>from crewai.tools import tool
+@tool(&ldquo;Calculator Tool&rdquo;)
+def calculator(expression: str) &rarr; str:
+&quot;&rdquo;&ldquo;Useful for solving simple math expressions.&rdquo;&rdquo;&rdquo;
+return eval(expression)
+Under the hood, this decorator does something crucial: it performs introspection.
+It inspects the function’s name (calculator), its docstring (“Useful for solving...”),
+and its parameters and type hints ( expression: str ). It then uses this informa-
+tion to generate a formal schema (often a JSON Schema).
+Tool Selection (Function Calling)
+This schema, generated during the registration process shown in Figure 4-3, is the
+key to reliable tool use. Instead of asking the LLM to generate a fragile string, the
+framework passes the schemas of all available tools directly to the model as part
+of its prompt. Modern LLMs are trained to understand these schemas and can
+output a structured function call when they determine a tool is needed.
+Figure 4-3. The Tooling Interface. Frameworks use introspection to convert native code into the formal JSON
+schemas required for function calling.
+This is a monumental shift. The developer is no longer in the business of parsing
+unpredictable strings. The LLM’s output is a structured object that says, “I want to
+call the tool named calculator with the argument expression set to 2+2 .” This is
+reliable, safe, and built upon the model’s native capabilities.
+Secure Execution
+Once the agent’s runtime receives a valid function call request from the LLM, it is
+responsible for securely executing the corresponding code. The tooling interface
+ensures that:
+Only registered tools can be called. An LLM cannot simply invent a function to
+run.
+Arguments are validated against the schema. If the LLM provides an incorrect
+argument type, the framework can catch it.</p><h2 id="page-12">Page 12</h2><p>Execution is sandboxed where necessary. For high-risk tools like code inter-
+preters, the framework should provide a secure execution environment.
+Google’s ADK, for instance, provides a BuiltInCodeExecutor that is sandboxed
+to prevent malicious code from affecting the host system.
+By integrating these core responsibilities, the tooling interface provides the neces-
+sary “connective tissue” between an agent’s internal reasoning and its external
+environment. It replaces the fragile, manual workflows of the past with a robust
+protocol that ensures every interaction with an external system is predictable,
+validated, and safe. This transition from simple text generation to reliable, tool-
+augmented action is what truly marks the evolution from a conversational chat-
+bot to a functional, autonomous AI agent.
+Framework Spotlight: The Tool-as-a-Component
+Different frameworks treat tools as first-class components, but they provide dif-
+ferent levels of abstraction.
+CrewAI and ADK: The Function-as-a-Tool
+Both CrewAI and Google’s ADK offer a very direct and intuitive approach: a stan-
+dard Python function is a tool. The framework provides a wrapper to handle the
+schema generation and execution.</p><h1 class="page-break" id="adk-example-a-standard-python-function-is-registered-as-a-tool">ADK Example: A standard Python function is registered as a tool.</h1><p>from google.adk.agents import Agent</p><h1 class="page-break" id="this-is-just-a-regular-python-function">This is just a regular Python function.</h1><p>def get_weather(city: str) &rarr; dict:
+&quot;&rdquo;&ldquo;Retrieves the current weather report for a specified city.&rdquo;&rdquo;&rdquo;</p><h1 class="page-break" id="hellip-logic-to-call-a-weather-api-hellip">&hellip; logic to call a weather API &hellip;</h1><p>return {&ldquo;status&rdquo;: &ldquo;success&rdquo;, &ldquo;report&rdquo;: &ldquo;Sunny, 25°C&rdquo;}</p><h1 class="page-break" id="the-function-is-passed-directly-into-the-agentrsquos-tool-list">The function is passed directly into the agent&rsquo;s tool list.</h1><h1 class="page-break" id="the-adk-runtime-handles-the-introspection-and-schema-generation">The ADK runtime handles the introspection and schema generation.</h1><p>weather_agent = Agent(
+model=&ldquo;gemini-2.5-flash&rdquo;,
+name=&ldquo;weather_agent&rdquo;,
+tools=[get_weather]
+)
+LangGraph: The Tool Node
+LangGraph, with its explicit graph-based architecture, treats tool execution as a
+specific type of node in the graph. The developer defines a “tool node” that is re-
+sponsible for executing any tool calls present in the agent’s state.</p><h1 class="page-break" id="langgraph-example-a-dedicated-node-in-the-graph-for-tool-execution">LangGraph Example: A dedicated node in the graph for tool execution.</h1><p>from langgraph.prebuilt import ToolNode</p><h1 class="page-break" id="first-define-the-tools-eg-as-functions-with-tool-decorators">First, define the tools (e.g., as functions with @tool decorators).</h1><p>tools = [tavily_search_tool]</p><h1 class="page-break" id="create-a-toolnode-this-is-a-pre-built-component-that-knows-how-to">Create a ToolNode. This is a pre-built component that knows how to</h1><h1 class="page-break" id="look-at-the-agentrsquos-state-find-tool-call-requests-and-execute-them">look at the agent&rsquo;s state, find tool call requests, and execute them.</h1><p>tool_node = ToolNode(tools)</p><h1 class="page-break" id="add-this-node-to-the-graph-an-edge-will-route-control-to-this-node">Add this node to the graph. An edge will route control to this node</h1><h1 class="page-break" id="when-the-agentrsquos-state-contains-a-tool-call">when the agent&rsquo;s state contains a tool call.</h1><p>graph_builder.add_node(&ldquo;tools&rdquo;, tool_node)</p><h2 id="page-13">Page 13</h2><p>The Team Players: Multi-Agent
+Communication
+As we push the boundaries of what AI can do, we quickly find that a single, mono-
+lithic agent—no matter how powerful—often falls short. Complex problems are
+rarely solved by one generalist; they are solved by a team of specialists, each
+bringing their unique expertise to the table. An AI system designed to write a
+market analysis report is far more effective if it’s composed of a Research Agent, a
+Data Analysis Agent, and a Writing Agent, rather than one “Business Agent” trying
+to do everything.
+This is the paradigm of multi-agent systems. But for a team to be effective, its
+members must be able to communicate. The multi-agent communication compo-
+nent of a framework provides the protocols and interfaces that enable this collab-
+oration. It is the system that allows agents to delegate tasks, share information,
+and work together as a cohesive unit.
+The Developer’s Dilemma: Orchestrating a Team
+Imagine you’ve built three specialized agents. How do you make them work to-
+gether? Without a framework, you become the manual project manager, facing a
+daunting orchestration challenge:
+Routing and Delegation
+How does the “main” agent decide which specialist to call? You’d have to
+write complex routing logic, perhaps parsing the main agent’s output for
+keywords like “research” or “write” to decide which sub-agent to invoke
+next. This is brittle and doesn’t scale.
+State and Context Passing
+How does the Writing Agent get the findings from the Research Agent? You
+would need to manually capture the output from one agent’s execution and
+format it correctly to be the input for the next. This creates tight, hard-cod-
+ed coupling between your agents, making the system rigid and difficult to
+modify.
+Control Flow
+What if the Writing Agent needs to ask the Research Agent for clarification?
+This requires a cyclical flow of control, which is notoriously difficult to
+manage in a simple script. You are now building a complex state machine
+from scratch.
+A multi-agent communication system solves this by providing a standardized way
+for agents to interact, manage control flow, and share context, turning a chaotic
+collection of individuals into an organized and effective team.
+Core Principles of Multi-Agent Communication
+A framework facilitates collaboration by providing clear mechanisms for delega-
+tion and information sharing.
+Delegation: Passing Control
+Delegation is the act of one agent handing off responsibility for a task to another.
+A robust framework provides formal mechanisms for this transfer of control.
+Explicit Routing
+In some systems, the control flow is deterministic. The developer defines
+the exact sequence of agent interactions. This is a reliable and predictable
+pattern often used for well-defined workflows. CrewAI’s is a perfect imple-</p><h2 id="page-14">Page 14</h2><p>mentation of this. The framework’s runtime ensures that tasks are passed
+from one agent to the next in the specified order.</p><h1 class="page-break" id="crewai-example-a-deterministic-sequential-communication-pattern">CrewAI Example: A deterministic, sequential communication pattern.</h1><p>from crewai import Crew, Process</p><h1 class="page-break" id="the-crew-is-configured-with-a-list-of-agents-and-tasks">The Crew is configured with a list of agents and tasks.</h1><p>crew = Crew(
+agents=[researcher, writer],
+tasks=[research_task, writing_task],</p><h1 class="page-break" id="the-lsquosequentialrsquo-process-tells-the-runtime-to-pass-control-from-the">The &lsquo;sequential&rsquo; process tells the runtime to pass control from the</h1><h1 class="page-break" id="agent-handling-researchtask-to-the-agent-handling-writingtask-upon-completion">agent handling research_task to the agent handling writing_task upon completion.</h1><p>process=Process.sequential
+)
+Dynamic Routing (Supervision):
+A more flexible and powerful pattern is to have a “manager” or “supervi-
+sor” agent that dynamically decides which specialist to delegate the task to.
+This is often implemented through the framework’s tooling interface. The
+supervisor agent is given a special tool for each of its subordinate agents.
+When the supervisor decides to delegate, it calls the appropriate tool.
+Google’s ADK models this through the AgentTool. A parent agent can be giv-
+en an AgentTool that wraps a sub-agent. Calling this tool is the mechanism
+for delegation.</p><h1 class="page-break" id="adk-example-using-an-agenttool-for-dynamic-delegation">ADK Example: Using an AgentTool for dynamic delegation.</h1><p>from google.adk.tools import agent_tool</p><h1 class="page-break" id="define-the-specialist-agents">Define the specialist agents.</h1><p>billing_agent = LlmAgent(name=&ldquo;Billing&rdquo;, description=&ldquo;Handles billing inquiries.&rdquo;)
+support_agent = LlmAgent(name=&ldquo;Support&rdquo;, description=&ldquo;Handles technical support.&rdquo;)</p><h1 class="page-break" id="the-coordinator-agent-is-given-tools-that-represent-the-other-agents">The coordinator agent is given tools that represent the other agents.</h1><p>coordinator = LlmAgent(
+name=&ldquo;HelpDeskCoordinator&rdquo;,
+instruction=&ldquo;Route user requests to the correct specialist.&rdquo;,</p><h1 class="page-break" id="the-coordinatorrsquos-llm-will-see-lsquobillingrsquo-and-lsquosupportrsquo-as-available-tools">The coordinator&rsquo;s LLM will see &lsquo;Billing&rsquo; and &lsquo;Support&rsquo; as available tools.</h1><p>tools=[
+agent_tool.AgentTool(agent=billing_agent),
+agent_tool.AgentTool(agent=support_agent)
+]
+)</p><h1 class="page-break" id="when-the-coordinatorrsquos-llm-decides-to-call-the-lsquobillingrsquo-tool-the-adk">When the coordinator&rsquo;s LLM decides to call the &lsquo;Billing&rsquo; tool, the ADK</h1><h1 class="page-break" id="runtime-interprets-this-as-a-delegation-of-control-to-the-billingagent">runtime interprets this as a delegation of control to the billing_agent.</h1><p>Information Sharing: Passing Context
+For delegation to be useful, the specialist agent must receive the necessary con-
+text to perform its task. Frameworks handle this information sharing primarily
+through the session state.
+When one agent completes its work, its output is saved to the shared state. When
+the next agent is activated, it can read from that same state, giving it the context it
+needs.
+LangGraph, with its explicit state model, makes this transparent. The output of
+one node (representing an agent’s turn) is an update to the shared state object.
+The next node in the graph receives this updated state as its input.</p><h1 class="page-break" id="langgraph-example-sharing-information-via-a-shared-state-object">LangGraph Example: Sharing information via a shared state object.</h1><p>class ResearchState(TypedDict):
+topic: str
+research_findings: Optional[str] # Key for sharing info</p><h2 id="page-15">Page 15</h2><p>report: Optional[str]
+def research_agent_node(state: ResearchState):</p><h1 class="page-break" id="this-agent-performs-research-and-saves-its-output-to-the-state">This agent performs research and saves its output to the state.</h1><p>findings = conduct_research(state['topic'])
+return {&ldquo;research_findings&rdquo;: findings}
+def writing_agent_node(state: ResearchState):</p><h1 class="page-break" id="this-agent-reads-the-findings-from-the-state-to-write-its-report">This agent reads the findings from the state to write its report.</h1><p>findings = state['research_findings']
+report = write_report(findings)
+return {&ldquo;report&rdquo;: report}
+graph_builder.add_node(&ldquo;researcher&rdquo;, research_agent_node)
+graph_builder.add_node(&ldquo;writer&rdquo;, writing_agent_node)</p><h1 class="page-break" id="an-edge-ensures-the-writer-runs-after-the-researcher-so-it-can-access-the-findings">An edge ensures the writer runs after the researcher, so it can access the findings.</h1><p>graph_builder.add_edge(&ldquo;researcher&rdquo;, &ldquo;writer&rdquo;)
+CrewAI simplifies this further with the context parameter on a Task. This is a di-
+rect instruction to the runtime: “When this task starts, ensure the output from
+these previous tasks is available in its context.”</p><h1 class="page-break" id="crewai-example-explicitly-defining-information-flow-with-task-context">CrewAI Example: Explicitly defining information flow with task context.</h1><p>research_task = Task(
+description=&ldquo;Research the latest AI trends.&rdquo;,
+agent=researcher,
+expected_output=&rdquo;...&rdquo;
+)
+writing_task = Task(
+description=&ldquo;Write a blog post based on the research findings.&rdquo;,
+agent=writer,
+expected_output=&rdquo;...&rdquo;,</p><h1 class="page-break" id="this-tells-the-runtime-the-output-of-researchtask-is-required">This tells the runtime: the output of research_task is required</h1><h1 class="page-break" id="context-for-this-task-the-runtime-handles-passing-this-information">context for this task. The runtime handles passing this information.</h1><p>context=[research_task]
+)
+The Agent’s Charter: Instructions and
+Prompting
+We have assembled the core machinery of an agent: a runtime to orchestrate its
+actions, a memory to provide context, tools to interact with the world, and proto-
+cols for collaboration. But what animates this machinery? What gives the agent its
+purpose, its personality, and its rules of engagement? This is the role of the
+Instructions and Prompting system.
+This component is the agent’s charter—its constitution. It is a structured system
+for defining and managing the agent’s core identity, goals, and operational bound-
+aries. It is the primary interface between the developer’s high-level intent and the
+LLM’s low-level reasoning. Without a robust prompting system, an agent is like a
+powerful engine without a steering wheel—capable of great force but with no
+direction.
+The Developer’s Dilemma: The Unpredictable Agent
+Imagine you’re building a customer support agent. You want it to be helpful, em-
+pathetic, and to never give financial advice. If your only tool is a single, massive
+string of text you send to the LLM, you face immediate challenges:
+Brittleness</p><h2 id="page-16">Page 16</h2><p>A simple change—like adding a new tool—requires you to manually edit a
+large, monolithic prompt, risking unintended side effects. You might acci-
+dentally remove a crucial safety instruction while adding a new capability.
+Lack of Structure
+How do you reliably inject dynamic information, like the user’s name or the
+conversation history? You resort to fragile string formatting (f”...”), which
+can easily break if the data contains unexpected characters or if the tem-
+plate becomes complex.
+Inconsistency
+How do you ensure that certain rules (like “never give financial advice”)
+are applied consistently across every single turn of the conversation?
+Manually including this in every prompt is repetitive and error-prone.
+No Separation of Concerns
+The agent’s core identity (its persona), its immediate task (the user’s latest
+query), and its available tools are all jumbled together. This makes the sys-
+tem difficult to reason about, debug, and maintain.
+A dedicated prompting system solves these problems by providing a structured,
+modular, and dynamic way to construct the final instructions sent to the LLM.
+Core Responsibilities of a Prompting System
+A modern agent framework treats prompting not as simple string creation, but as
+a formal system for composing context. Its key responsibilities are as follows.
+Modular and Composable Prompts
+Instead of a single block of text, a good framework allows prompts to be built
+from smaller, reusable components or “slices.” This separates different concerns,
+making the system vastly more maintainable.
+Google’s ADK, for example, formalizes this with the instruction parameter. This is
+the agent’s core directive, separate from the immediate user query or the tool def-
+initions. This separation ensures that the agent’s fundamental identity remains
+constant, while the specifics of the task can change with each turn.</p><h1 class="page-break" id="adk-example-separating-the-agentrsquos-core-instruction-from-the-task">ADK Example: Separating the agent&rsquo;s core instruction from the task.</h1><p>from google.adk.agents import LlmAgent</p><h1 class="page-break" id="the-lsquoinstructionrsquo-is-the-agentrsquos-permanent-charter">The &lsquo;instruction&rsquo; is the agent&rsquo;s permanent charter.</h1><p>support_agent = LlmAgent(
+name=&ldquo;SupportAgent&rdquo;,
+model=&ldquo;gemini-2.5-flash&rdquo;,
+instruction=&rdquo;&rdquo;&rdquo;
+You are a helpful and empathetic customer support assistant.
+Your primary goal is to resolve user issues.
+You must NEVER give financial advice under any circumstances.
+&quot;&rdquo;&rdquo;
+)</p><h1 class="page-break" id="when-the-agent-runs-the-runtime-combines-this-core-instruction-with-the">When the agent runs, the runtime combines this core instruction with the</h1><h1 class="page-break" id="current-user-message-and-available-tools-to-form-the-final-prompt">current user message and available tools to form the final prompt.</h1><h1 class="page-break" id="runnerrunnewmessageldquomy-payment-failedrdquo">runner.run(new_message=&ldquo;My payment failed.&rdquo;)</h1><p>Dynamic Context Injection
+A prompting system must be able to dynamically inject information from the
+agent’s state into the final prompt. This is what makes the agent context-aware. A</p><h2 id="page-17">Page 17</h2><p>powerful framework provides a safe and structured way to do this, moving be-
+yond simple f-strings.
+Google’s ADK again provides a clear example with its {key} templating syntax
+within instructions. This is a direct signal to the runtime: “Before sending this to
+the LLM, find the value for the topic in the current session state and insert it
+here.”</p><h1 class="page-break" id="adk-example-dynamic-injection-of-state-into-the-prompt">ADK Example: Dynamic injection of state into the prompt.</h1><p>story_generator = LlmAgent(
+name=&ldquo;StoryGenerator&rdquo;,
+model=&ldquo;gemini-2.0-flash&rdquo;,</p><h1 class="page-break" id="the-topic-placeholder-will-be-dynamically-filled-by-the-runtime">The {topic} placeholder will be dynamically filled by the runtime.</h1><p>instruction=&ldquo;Write a short story about a cat, focusing on the theme: {topic}.&rdquo;
+)</p><h1 class="page-break" id="if-sessionstate-is-ldquofriendshiprdquo-the-final-instruction-sent-to">If session.state['topic'] is &ldquo;friendship&rdquo;, the final instruction sent to</h1><h1 class="page-break" id="the-llm-will-be-ldquowrite-a-short-storyhellip-focusing-on-the-theme-friendshiprdquo">the LLM will be &ldquo;Write a short story&hellip; focusing on the theme: friendship.&rdquo;</h1><p>Defining Identity and Persona
+The prompting system is where the developer defines the agent’s persona. This is
+more than just a stylistic choice; it fundamentally shapes the agent’s reasoning. A
+well-defined persona can improve the quality and safety of the agent’s output.
+CrewAI formalizes this with its role, goal, and backstory parameters. These are
+not just descriptive metadata; they are core components that the CrewAI runtime
+weaves together to construct the final, comprehensive system prompt for the
+agent. This structured approach encourages developers to think deeply about the
+agent’s identity.</p><h1 class="page-break" id="crewai-example-structured-definition-of-an-agentrsquos-persona">CrewAI Example: Structured definition of an agent&rsquo;s persona.</h1><h1 class="page-break" id="this-yaml-is-not-just-documentation-itrsquos-a-configuration-that-the">This YAML is not just documentation; it&rsquo;s a configuration that the</h1><h1 class="page-break" id="crewai-runtime-uses-to-build-the-agentrsquos-core-prompt">CrewAI runtime uses to build the agent&rsquo;s core prompt.</h1><p>researcher:
+role: &gt;
+Senior Research Specialist for {topic}
+goal: &gt;
+Find comprehensive and accurate information about {topic}
+backstory: &gt;
+You are an experienced research specialist with a talent for
+finding relevant information from various sources.
+Tool Schema Integration
+As discussed in the Tooling Interface section, the prompting system is responsible
+for taking the schemas of the available tools and formatting them in a way the
+LLM can understand. It constructs the part of the prompt that says, “Here are the
+tools you have available, and here is how you must call them.” This integration is
+a critical function of the runtime and prompting system, ensuring that tool use is
+reliable and structured.
+Frameworks in Focus: Choosing Your Orchestration
+Engine
+Throughout this chapter, we’ve explored the five core components that define a
+modern agent framework. To bring these abstract concepts to life, let’s compare
+three powerful, cloud-agnostic frameworks: Google’s Agent Development Kit
+(ADK), LangGraph, and CrewAI. While all three can build sophisticated agents,
+they embody fundamentally different architectural philosophies. Understanding
+these differences will equip you to choose the right tool for your specific needs.</p><h2 id="page-18">Page 18</h2><p>Figure 4-4 outlines the three primary architectural patterns found in modern
+frameworks. Understanding whether your use case requires a top-down hierar-
+chy, a rigid state-machine graph, or a modular component-based shell is the first
+step in selecting the right tool for the job.
+Figure 4-4. Comparative Orchestration Patterns. Hierarchical patterns (top-down), Graph-based patterns (ex-
+plicit cycles), and Component-based patterns (modular plugins).
+At their core, the choice comes down to your preferred development model and
+the level of abstraction you desire:
+CrewAI is a high-level, declarative framework for multi-agent collaboration.
+You define the “who” (agents with roles) and the “what” (tasks to be done). The
+framework handles the “how” by automatically orchestrating the workflow.
+Google ADK is a “batteries-included” SDK. It provides a comprehensive tool-
+kit of classes, services, and plugins, treating agent development like traditional
+object-oriented software engineering. You configure a pre-built agentic loop.
+LangGraph is a “control-flow-first” orchestration library. It models agent
+logic as an explicit state machine, giving you fine-grained control over every
+step and transition in your workflow.
+Let’s see how this philosophical difference plays out across the five core compo-
+nents of an agent framework.
+Runtime and Orchestration Engine
+CrewAI offers the most abstracted runtime experience. Developers define a Crew
+populated with specific agents and tasks, choosing either a sequential or hierar-
+chical process. From there, the framework’s underlying engine takes over, han-
+dling the entire execution flow and seamlessly passing information between
+agents without requiring manual step definition.
+In contrast, Google ADK relies on an implicit, model-directed loop. A developer in-
+stantiates an LlmAgent with instructions and tools, and the framework’s
+Runner manages the cyclical “perceive-reason-act” cycle behind the scenes. You
+configure the agent’s capabilities, but the runtime handles the looping logic.
+LangGraph takes a fundamentally different, explicit approach. It requires devel-
+opers to define the control flow themselves by adding execution nodes (functions)
+and routing edges (transitions) to a StateGraph . This makes complex routing,
+cycles, and branching first-class citizens of the architecture, directly visible in the
+application code.
+Memory Systems
+When it comes to managing context, CrewAI heavily abstracts memory manage-
+ment. Short-term memory is naturally handled as context is passed between
+tasks, while persistent, long-term memory can be enabled with a simple
+memory=True flag, which instantly spins up a built-in RAG pipeline for persis-
+tence and retrieval.</p><h2 id="page-19">Page 19</h2><p>Google ADK treats memory more like a pluggable piece of infrastructure.
+Developers provide a SessionService for short-term conversational context
+and a MemoryService for long-term knowledge retention. Within ADK, an agent
+typically interacts with its long-term memory by explicitly calling a dedicated
+load_memory tool.
+LangGraph, leaning into its explicit design, integrates memory directly into its
+stateful graph architecture. Short-term memory is stored in the graph’s State
+object and saved by a Checkpointer , while long-term knowledge is accessed via
+a Store that developers can programmatically query from any node.
+The Tooling Interface
+Equipping agents with external capabilities also varies by framework. CrewAI
+and Google ADK both favor direct tool registration. In CrewAI, developers simply
+define tools as Python functions—often tagged with an @tool decorator—and as-
+sign them to an agent. Similarly, Google ADK allows developers to pass native
+Python functions directly into an agent’s tools list. Both frameworks automatically
+handle the heavy lifting of code introspection, schema generation, and secure
+execution.
+LangGraph approaches tooling through node-based execution. Rather than at-
+taching tools directly to an agent object, tools are typically housed within a dedi-
+cated ToolNode in the graph. When the agent’s reasoning node determines a tool
+call is necessary, the graph’s edges explicitly route the execution state to the
+ToolNode to perform the action.
+Multi-Agent Communication
+The approach to coordinating multiple agents highlights the core philosophies of
+each framework. CrewAI was designed specifically with multi-agent systems in
+mind. Communication is a core primitive determined by how tasks are structured
+and assigned within a crew, with the framework’s overarching process automati-
+cally orchestrating interactions.
+Google ADK promotes a more hierarchical communication model. Sub-agents are
+treated as callable tools ( AgentTool ) that are given to a parent agent, creating a
+natural delegation structure in which a manager assigns work to a specialist.
+LangGraph, unbound by strict hierarchies, enables entirely flexible topologies.
+Because agents are simply nodes within a graph, communication pathways are
+defined entirely by the edges connecting them. This allows developers to build
+any pattern imaginable—from a central supervisor or a collaborative swarm to
+fully custom workflows that mirror CrewAI’s structured processes while retaining
+explicit developer control.
+Instructions and Prompting
+Finally, the way developers dictate the agent’s persona and logic differs signifi-
+cantly. CrewAI relies on structured persona definitions, requiring developers to
+define an agent by its role, goal, and backstory. The framework then seamlessly
+combines these elements into a comprehensive prompt for the underlying LLM,
+abstracting away the nuances of prompt engineering.
+Google ADK utilizes structured parameters on the Agent class itself, such as an
+instruction parameter that features built-in support for dynamically injecting
+state variables (like {topic} ) directly into the prompt.
+LangGraph, true to form, is entirely programmatic. Prompts are typically con-
+structed dynamically inside individual nodes, granting the developer absolute
+control to craft, format, and inject prompts using bespoke logic based on the exact
+current state of the graph.</p><h2 id="page-20">Page 20</h2><p>Choosing the Right Framework
+Ultimately, the choice of framework comes down to the specific needs of the
+project and the developer’s preferred level of abstraction. CrewAI is the ideal
+choice for the rapid development of multi-agent systems where the collaboration
+pattern is well-defined (such as sequential or hierarchical pipelines) and a high-
+level, declarative API is preferred.
+Google ADK offers a highly component-based development experience akin to
+building a traditional software application, making it excellent for rapid prototyp-
+ing, especially when the agent’s logic is primarily directed by the model.
+Conversely, LangGraph is the definitive choice when a project requires explicit,
+fine-grained control over complex, stateful workflows. It truly shines when build-
+ing systems that involve intricate cycles, human-in-the-loop approvals, or novel
+multi-agent topologies that outgrow standard hierarchical patterns.
+Conclusion
+The five core components—Runtime, Memory, Tooling, Communication, and
+Prompting—are the essential building blocks of all capable AI agents. Together,
+they elevate a standard language model into a dynamic, autonomous system.
+Without a robust runtime, an application is just a static script, unable to manage
+its own execution loops or state. Without memory, the system has no context, ren-
+dering it unable to personalize interactions or recall past events. Without a tool-
+ing interface, the model is restricted to generating text, completely unable to trig-
+ger real-world actions or retrieve live data. Without communication protocols, it
+cannot coordinate with other specialized agents to divide and solve complex
+problems. And finally, without a structured prompting system, the agent lacks the
+clear instructions and functional boundaries required to reliably accomplish its
+intended tasks.
+The ultimate job of a framework is to act as the final assembly line. On every turn
+of an agent’s execution loop, it gathers all the necessary components: the core in-
+structions, the relevant long-term and short-term memories, the available tools,
+and the latest user message. It then intelligently assembles these pieces into a sin-
+gle, coherent prompt that is sent to the LLM. This process, repeated on every turn,
+is what allows a structured, modularly defined agent to engage in dynamic, con-
+text-aware reasoning. It is the mechanism that translates the developer’s high-lev-
+el architectural decisions into low-level, actionable instructions for the model, en-
+suring that the agent acts with purpose, within its boundaries, and with all the in-
+formation it needs to succeed.
+With a solid understanding of these foundational components, we are now ready
+to move from theory to practice. In the next chapter, we will use Google’s Agent
+Development Kit (ADK) to explore the hands-on design and construction of indi-
+vidual agents, detailing how to craft effective instructions, build robust custom
+tools, and orchestrate both LLM-directed and workflow-driven behaviors.</p><h2 id="extracted-images">Extracted Images</h2><p>![Page 4 image](images/4. Core Components of an Agent Framework _ Multimodal, Real-Time AI Agent Systems-p004-img001.png)</p><p>![Page 10 image](images/4. Core Components of an Agent Framework _ Multimodal, Real-Time AI Agent Systems-p010-img001.png)</p><p>![Page 11 image](images/4. Core Components of an Agent Framework _ Multimodal, Real-Time AI Agent Systems-p011-img001.png)</p><p>![Page 18 image](images/4. Core Components of an Agent Framework _ Multimodal, Real-Time AI Agent Systems-p018-img001.png)</p></main>
+    <aside class="margin-area" id="margin-area-right"></aside>
+  </body>
+</html>
